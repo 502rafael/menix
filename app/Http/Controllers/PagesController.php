@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App;
 class PagesController extends Controller
 {
     public  function home(){
@@ -16,7 +16,10 @@ class PagesController extends Controller
 
 
     public  function index(){
-        return view('inicio');
+
+        $data = App\Models\Articulo::all();
+    
+        return view('inicio',compact('data'));
     }
 
 

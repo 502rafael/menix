@@ -31,28 +31,29 @@
                     </tr>
                 </thead>
                 <tbody>
+                    @foreach ($data as $item)
                     <tr class="success">
-                        <td>Markasdfregregrgwergergwergr</td>
-                        <td>5.59</td>
                         <td>
-                            <input type="number"  name="points" step="1" value="1" size=40 style="width:50px">
+                            {{$item->nombre}}
                         </td>
-                        <td>11.6</td>
+                        <td>
+                            {{$item->precio_venta}}
+                        </td>
+                        <td>
+                            <input type="number"  min="1" name="points" step="1" value="1" size=40 style="width:50px">
+                        </td>
+                        <td>
+                            
+                            {{ ($item->precio_venta * 5 )}}
+                        </td>
                         <td>
                             <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
                         </td>
                     </tr>
-                    <tr class="success">
-                        <td>Markwregwergwergwergwergwergewrgregwer</td>
-                        <td>5.59</td>
-                        <td>
-                            <input type="number"  name="points" step="1" value="1" size=40 style="width:50px">
-                        </td>
-                        <td>11.6</td>
-                        <td>
-                            <a href="#" class="btn btn-danger btn-sm">Eliminar</a>
-                        </td>
-                    </tr>
+                    @endforeach
+
+
+
                 </tbody>
             </table>
            
