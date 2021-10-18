@@ -16,3 +16,13 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('menix');
 });
+Route::get('/index', function () {
+    return view('plantilla');
+});
+
+Route::get('/productos', function () {
+    return view('productos');
+})->name('productos');
+Route::get('/inicio', function () {
+    return view('inicio');
+})->name('inicio');
