@@ -27,7 +27,7 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="{{ route('inicio') }}">MENIX</a>
+                <a class="navbar-brand" href="{{ route('index') }}">MENIX</a>
             </div>
 
             <ul class="nav navbar-top-links navbar-right">
@@ -57,10 +57,10 @@
                 <ul class="nav" id="main-menu">
 
                     <li>
-                        <a href="{{ route('inicio') }}"><i class="fa fa-dashboard"></i> INICIO</a>
+                        <a href="{{ route('index') }}"><i class="fa fa-dashboard"></i> INICIO</a>
                     </li>
                     <li>
-                        <a  href="{{ route('productos') }}"><i class="fa fa-desktop"></i>PRODUCTOS</a>
+                        <a  href="#"><i class="fa fa-desktop"></i>PRODUCTOS</a>
                     </li>
 					
                 </ul>

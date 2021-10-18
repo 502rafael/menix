@@ -56,6 +56,8 @@
                                         <li><a href="#servicio">Servicios</a></li>
                                         <li><a href="#ubicacion">Ubicacion</a></li>
                                         <li><a href="#nosotros">Nosotros</a></li>
+                                        
+
                                     </ul>
                                 </nav>
                             </div>
@@ -63,7 +65,8 @@
                         <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                             <div class="Appointment">
                                 <div class="book_btn d-none d-lg-block">
-                                    <a class="popup-with-form" href="#test-form">Ingresar</a>
+                                    <a href="{{ route('login')}}">Ingresar</a>
+
                                 </div>
                             </div>
                         </div>

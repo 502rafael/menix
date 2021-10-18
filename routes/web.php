@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use  App\Http\Controllers;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,16 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('menix');
-});
-Route::get('/index', function () {
-    return view('plantilla');
-});
+Route::get('/', 'App\Http\Controllers\PagesController@home');
 
-Route::get('/productos', function () {
-    return view('productos');
-})->name('productos');
-Route::get('/inicio', function () {
-    return view('inicio');
-})->name('inicio');
+
+Route::get('/login', 'App\Http\Controllers\PagesController@login')->name('login');
+
+
+Route::get('/index', 'App\Http\Controllers\PagesController@index')->name('index');
